@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6efe3">
+  <meta name="description" content="A beautiful wedding invitation.">
+  <title>Our Wedding | A Royal Celebration</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Decorative background -->
+  <div class="petals" aria-hidden="true"></div>
+
+  <!-- Music -->
+  <audio id="weddingMusic" loop preload="none">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Intro screen -->
+  <section id="intro" class="intro-screen">
+    <div class="intro-pattern"></div>
+    <div class="intro-content">
+      <p class="eyebrow">THE WEDDING INVITATION</p>
+      <div class="om">ॐ</div>
+      <p class="intro-blessing">With the blessings of our families</p>
+      <h1><span id="introBride">Sarbajoya</span><i>&amp;</i><span id="introGroom">Tapasundar</span></h1>
+      <p class="intro-date">25 • 11 • 2026</p>
+      <button id="enterBtn" type="button" class="gold-btn" onclick="openInvitation()">Open Invitation <span>✦</span></button>
+      <p class="tap-note">Tap to begin the celebration</p>
+    </div>
+  </section>
+
+  <main id="mainContent" class="site hidden">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a class="brand" href="#home">A <span>&amp;</span> A</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#couple">Couple</a>
+        <a href="#story">Story</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <div class="mandala">✦</div>
+        <p class="script">Together with our families</p>
+        <h2><span>Sarbajoya</span><b>&amp;</b><span>Tapasundar</span></h2>
+        <p class="hero-date">25 November 2026</p>
+        <p class="hero-location">Ashirbaad Lodge</p>
+        <a class="scroll-cue" href="#welcome">↓</a>
+      </div>
+    </section>
+
+    <!-- Welcome -->
+    <section class="section welcome" id="welcome">
+      <div class="ornament">❧ ✦ ❧</div>
+      <p class="eyebrow reveal">A NEW CHAPTER BEGINS</p>
+      <h2 class="section-title reveal">Two hearts, one beautiful journey.</h2>
+      <p class="lead reveal">
+        We are delighted to invite you to celebrate the beginning of our forever.
+        Your presence, blessings and love will make our special day even more meaningful.
+      </p>
+      <div class="date-card reveal">
+        <div><small>THE</small><strong>25</strong><small>DAY</small></div>
+        <span></span>
+        <div><small>NOVEMBER</small><strong>2026</strong><small>WEDNESDAY</small></div>
+      </div>
+    </section>
+
+    <!-- Save the Date / Calendar -->
+    <section class="calendar-section" id="calendar">
+      <div class="calendar-copy reveal">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2 class="section-title">Mark Your Calendar</h2>
+        <p class="lead small">We would be honoured to have you with us on this special day. Please save the date and join us as we begin this new chapter together.</p>
+        <div class="calendar-date-line">
+          <span class="calendar-icon">▣</span>
+          <div><small>WEDNESDAY</small><strong>25 November 2026</strong></div>
+        </div>
+        <button class="gold-btn" id="calendarBtn" type="button">Add to Calendar ✦</button>
+      </div>
+      <div class="calendar-card reveal" aria-label="November 2026 calendar">
+        <div class="calendar-head">
+          <button type="button" aria-label="Previous month" disabled>‹</button>
+          <h3>November 2026</h3>
+          <button type="button" aria-label="Next month" disabled>›</button>
+        </div>
+        <div class="calendar-weekdays">
+          <span>SUN</span><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span>
+        </div>
+        <div class="calendar-grid">
+          <span></span><span></span><span></span><span></span>
+          <span>1</span><span>2</span><span>3</span>
+          <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+          <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+          <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+          <span class="selected">25</span><span>26</span><span>27</span><span>28</span>
+          <span>29</span><span>30</span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Couple -->
+    <section class="section couple-section" id="couple">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE COUPLE</p>
+        <h2 class="section-title">Meet the two souls</h2>
+      </div>
+      <div class="couple-grid">
+        <article class="person-card reveal">
+          <div class="portrait">
+            <img src="assets/bride.jpg" alt="Bride">
+            <div class="portrait-frame"></div>
+          </div>
+          <p class="role">THE BRIDE</p>
+          <h3>Sarbajoya Rakshit</h3>
+          <p>Daughter of <strong>Mr. &amp; Mrs. Sharma</strong></p>
+        </article>
+        <div class="ampersand reveal">&amp;</div>
+        <article class="person-card reveal">
+          <div class="portrait">
+            <img src="assets/groom.jpg" alt="Groom">
+            <div class="portrait-frame"></div>
+          </div>
+          <p class="role">THE GROOM</p>
+          <h3>Tapasundar Kar</h3>
+          <p>Son of <strong>Mr. &amp; Mrs. Mukherjee</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section story-section" id="story">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR STORY</p>
+        <h2 class="section-title">From a moment to forever</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot">01</div>
+          <div class="timeline-card">
+            <span>THE BEGINNING</span>
+            <h3>When our paths crossed</h3>
+            <p>Every beautiful story begins with an ordinary moment. Ours began with a meeting that neither of us knew would change everything.</p>
+          </div>
+        </article>
+        <article class="timeline-item reverse reveal">
+          <div class="timeline-dot">02</div>
+          <div class="timeline-card">
+            <span>THE JOURNEY</span>
+            <h3>Growing together</h3>
+            <p>Through laughter, little adventures and countless memories, two lives slowly became one shared journey.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-dot">03</div>
+          <div class="timeline-card">
+            <span>THE PROMISE</span>
+            <h3>A forever begins</h3>
+            <p>With the love of our families and the blessings of those closest to us, we decided to take the next beautiful step together.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="countdown-section">
+      <div class="countdown-overlay"></div>
+      <div class="countdown-content reveal">
+        <p class="eyebrow">COUNTING DOWN TO FOREVER</p>
+        <h2>The big day is almost here</h2>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section events-section" id="events">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE CELEBRATIONS</p>
+        <h2 class="section-title">Join us for every moment</h2>
+        <p class="lead small">Tap an event to reveal more details.</p>
+      </div>
+
+      <div class="events-grid">
+        <article class="event-card reveal">
+          <div class="event-image"><img src="assets/haldi.jpg" alt="Wedding"></div>
+          <div class="event-info">
+            <span class="event-number">01</span>
+            <h3>Wedding</h3>
+            <p class="event-meta">25 November • Wedding Ceremony</p>
+            <button class="details-btn">View details <span>+</span></button>
+            <div class="event-details">
+              <p>A bright and joyful afternoon filled with turmeric, laughter and family blessings.</p>
+              <strong>Ashirbaad Lodge</strong><br>Ashirbaad Lodge
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <div class="event-image"><img src="assets/mehendi.jpg" alt="Mehendi"></div>
+          <div class="event-info">
+            <span class="event-number">02</span>
+            <h3>Reception Party</h3>
+            <p class="event-meta">25 November • Wedding Celebration</p>
+            <button class="details-btn">View details <span>+</span></button>
+            <div class="event-details">
+              <p>An evening of music, dance, mehendi and memories with our favourite people.</p>
+              <strong>Ashirbaad Lodge</strong><br>Ashirbaad Lodge
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card featured reveal">
+          <div class="event-image"><img src="assets/wedding.jpg" alt="Wedding ceremony"></div>
+          <div class="event-info">
+            <span class="event-number">03</span>
+            <h3>The Wedding</h3>
+            <p class="event-meta">20 December • 7:00 PM</p>
+            <button class="details-btn">View details <span>+</span></button>
+            <div class="event-details">
+              <p>Join us as we exchange vows and begin our forever surrounded by love and blessings.</p>
+              <strong>Ashirbaad Lodge</strong><br>Ashirbaad Lodge
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <div class="event-image"><img src="assets/reception.jpg" alt="Reception"></div>
+          <div class="event-info">
+            <span class="event-number">04</span>
+            <h3>Reception</h3>
+            <p class="event-meta">26 November • Reception Party</p>
+            <button class="details-btn">View details <span>+</span></button>
+            <div class="event-details">
+              <p>Come celebrate, dine and dance with us as we begin our new chapter.</p>
+              <strong>Ashirbaad Lodge</strong><br>Ashirbaad Lodge
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Venue -->
+    <section class="venue-section" id="venue">
+      <div class="venue-image"><img src="assets/venue.jpg" alt="Wedding venue"></div>
+      <div class="venue-content reveal">
+        <p class="eyebrow">THE VENUE</p>
+        <h2>Ashirbaad Lodge</h2>
+        <p>Ashirbaad Lodge</p>
+        <div class="venue-actions">
+          <a href="https://maps.app.goo.gl/aaVJSf9RQtGtyJkS7?g_st=ac" target="_blank" rel="noopener" class="gold-btn">Get Directions ↗</a>
+          <button class="outline-btn" id="copyAddress">Copy Address</button>
+        </div>
+        <small id="copyStatus" class="copy-status"></small>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR MEMORIES</p>
+        <h2 class="section-title">A few moments we treasure</h2>
+      </div>
+      <div class="gallery">
+        <button class="gallery-item tall reveal" data-full="assets/gallery1.jpg"><img src="assets/gallery1.jpg" alt="Memory 1"></button>
+        <button class="gallery-item reveal" data-full="assets/gallery2.jpg"><img src="assets/gallery2.jpg" alt="Memory 2"></button>
+        <button class="gallery-item wide reveal" data-full="assets/gallery3.jpg"><img src="assets/gallery3.jpg" alt="Memory 3"></button>
+        <button class="gallery-item reveal" data-full="assets/gallery4.jpg"><img src="assets/gallery4.jpg" alt="Memory 4"></button>
+        <button class="gallery-item tall reveal" data-full="assets/gallery5.jpg"><img src="assets/gallery5.jpg" alt="Memory 5"></button>
+        <button class="gallery-item reveal" data-full="assets/gallery6.jpg"><img src="assets/gallery6.jpg" alt="Memory 6"></button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      © 2026
+      <br><br>
+      Made by
+      <br>
+      <a
+        href="https://instagram.com/Scorpio_gora97"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-insta"
+      >
+        @Scorpio_gora97
+      </a>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="Close image">×</button>
+    <img id="lightboxImg" src="" alt="Expanded gallery image">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
