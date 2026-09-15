@@ -1,783 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#f7f0e4">
+  <meta name="description" content="Wedding invitation of Pratyush Ghosh and Minakshi Banerjee — 25 November 2026.">
+  <title>Pratyush & Minakshi | Wedding Invitation</title>
 
-    <title>Pratyush & Minakshi | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <meta name="description"
-          content="Wedding invitation of Pratyush Ghosh and Minakshi Banerjee — 25 November 2026, Bankura.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="locked">
 
-    <!-- =========================================
-         OPENING SCREEN
-    ========================================== -->
+<!-- MUSIC -->
+<audio id="weddingMusic" loop preload="none">
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
 
-    <div id="opening-screen" class="opening-screen">
+<!-- INTRO -->
+<section id="intro" class="intro-screen">
+  <div class="intro-border"></div>
 
-        <div class="opening-content">
+  <div class="intro-content">
+    <p class="eyebrow">THE WEDDING INVITATION</p>
+    <div class="intro-symbol">✦</div>
 
-            <div class="ornament">✦</div>
+    <p class="intro-blessing">
+      With the blessings of our families
+    </p>
 
-            <p class="eyebrow">THE WEDDING INVITATION</p>
+    <h1>
+      <span>Pratyush</span>
+      <i>&amp;</i>
+      <span>Minakshi</span>
+    </h1>
 
-            <h1>
-                Pratyush
-                <span>&</span>
-                Minakshi
-            </h1>
+    <p class="intro-date">25 • 11 • 2026</p>
 
-            <div class="opening-date">
-                25 <span>•</span> 11 <span>•</span> 2026
-            </div>
+    <button id="enterBtn" class="gold-btn" type="button">
+      Open Invitation <span>✦</span>
+    </button>
 
-            <button id="openInvitation" class="primary-button">
-                Open Invitation <span>✦</span>
-            </button>
+    <p class="tap-note">
+      Tap to begin the celebration
+    </p>
+  </div>
+</section>
 
-            <p class="tap-text">Tap to begin the celebration</p>
 
-            <div class="small-ornament">
-                ❧ &nbsp; ✦ &nbsp; ❧
-            </div>
+<!-- MAIN WEBSITE -->
+<main id="mainContent" class="site hidden">
 
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#home" class="brand">
+      P <span>&amp;</span> M
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#couple">Couple</a>
+      <a href="#story">Story</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+
+    <div class="nav-actions">
+      <button id="musicBtn" class="music-btn" type="button" aria-label="Toggle music">♫</button>
+
+      <button id="menuBtn" class="menu-btn" type="button" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+      <div class="hero-decoration">❧ &nbsp; ✦ &nbsp; ❧</div>
+
+      <p class="eyebrow">A NEW CHAPTER BEGINS</p>
+
+      <p class="script">
+        Together with our families
+      </p>
+
+      <h2>
+        <span>Pratyush</span>
+        <b>&amp;</b>
+        <span>Minakshi</span>
+      </h2>
+
+      <div class="hero-date">
+        25 NOVEMBER 2026
+      </div>
+
+      <div class="hero-location">
+        BANKURA, WEST BENGAL
+      </div>
+
+      <a href="#welcome" class="scroll-cue">↓</a>
+    </div>
+  </section>
+
+
+  <!-- WELCOME -->
+  <section id="welcome" class="section welcome">
+
+    <div class="ornament">❧ ✦ ❧</div>
+
+    <p class="eyebrow reveal">
+      A NEW CHAPTER BEGINS
+    </p>
+
+    <h2 class="section-title reveal">
+      Two hearts, one beautiful journey.
+    </h2>
+
+    <p class="lead reveal">
+      We are delighted to invite you to celebrate the beginning
+      of our forever. Your presence, blessings and love will make
+      our special day even more meaningful.
+    </p>
+
+    <div class="date-card reveal">
+      <div>
+        <small>THE</small>
+        <strong>25</strong>
+        <small>DAY</small>
+      </div>
+
+      <span></span>
+
+      <div>
+        <small>NOVEMBER</small>
+        <strong>2026</strong>
+        <small>WEDNESDAY</small>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- CALENDAR -->
+  <section id="calendar" class="calendar-section">
+
+    <div class="calendar-copy reveal">
+
+      <p class="eyebrow">SAVE THE DATE</p>
+
+      <h2 class="section-title">
+        Mark Your Calendar
+      </h2>
+
+      <p class="lead small">
+        We would be honoured to have you with us on this special
+        day. Please save the date and join us as we begin this
+        new chapter together.
+      </p>
+
+      <div class="calendar-date-line">
+        <span class="calendar-icon">▣</span>
+
+        <div>
+          <small>WEDNESDAY</small>
+          <strong>25 November 2026</strong>
         </div>
+      </div>
+
+      <button id="calendarBtn" class="gold-btn" type="button">
+        Add to Calendar ✦
+      </button>
+    </div>
+
+
+    <div class="calendar-card reveal">
+
+      <div class="calendar-head">
+        <button type="button" disabled>‹</button>
+        <h3>November 2026</h3>
+        <button type="button" disabled>›</button>
+      </div>
+
+      <div class="calendar-weekdays">
+        <span>SUN</span>
+        <span>MON</span>
+        <span>TUE</span>
+        <span>WED</span>
+        <span>THU</span>
+        <span>FRI</span>
+        <span>SAT</span>
+      </div>
+
+      <div class="calendar-grid">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+        <span>12</span>
+        <span>13</span>
+        <span>14</span>
+
+        <span>15</span>
+        <span>16</span>
+        <span>17</span>
+        <span>18</span>
+        <span>19</span>
+        <span>20</span>
+        <span>21</span>
+
+        <span>22</span>
+        <span>23</span>
+        <span>24</span>
+        <span class="selected">25</span>
+        <span>26</span>
+        <span>27</span>
+        <span>28</span>
+
+        <span>29</span>
+        <span>30</span>
+      </div>
+
+      <div class="calendar-note">
+        <span class="calendar-dot"></span>
+        Wedding Day
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COUPLE -->
+  <section id="couple" class="section couple-section">
+
+    <div class="section-heading reveal">
+      <p class="eyebrow">THE COUPLE</p>
+
+      <h2 class="section-title">
+        Meet the two souls
+      </h2>
+    </div>
+
+
+    <div class="couple-grid">
+
+      <!-- GROOM -->
+      <article class="person-card reveal">
+
+        <div class="portrait placeholder">
+          <span>PHOTO</span>
+          <small>Add later</small>
+        </div>
+
+        <p class="role">THE GROOM</p>
+
+        <h3>Pratyush Ghosh</h3>
+
+        <p class="family">
+          S/o Smt Manasi Ghosh<br>
+          and Sri Anadi Ghosh
+        </p>
+
+        <p class="address">
+          Kshudiram Sarani, Bankura
+        </p>
+
+      </article>
+
+
+      <div class="ampersand reveal">
+        &amp;
+      </div>
+
+
+      <!-- BRIDE -->
+      <article class="person-card reveal">
+
+        <div class="portrait placeholder">
+          <span>PHOTO</span>
+          <small>Add later</small>
+        </div>
+
+        <p class="role">THE BRIDE</p>
+
+        <h3>Minakshi Banerjee</h3>
+
+        <p class="family">
+          D/o Smt Nandita Banerjee<br>
+          and Sri Tapas Banerjee
+        </p>
+
+        <p class="address">
+          Dasbagan, Bankura
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- STORY -->
+  <section id="story" class="section story-section">
+
+    <div class="section-heading reveal">
+      <p class="eyebrow">OUR STORY</p>
+
+      <h2 class="section-title">
+        From a moment to forever
+      </h2>
+    </div>
+
+
+    <div class="timeline">
+
+      <article class="timeline-item reveal">
+
+        <div class="timeline-dot">01</div>
+
+        <div class="timeline-card">
+          <span>THE BEGINNING</span>
+
+          <h3>
+            When our paths crossed
+          </h3>
+
+          <p>
+            Every beautiful story begins with an ordinary moment.
+            Ours began with a meeting that neither of us knew
+            would change everything.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="timeline-item reverse reveal">
+
+        <div class="timeline-dot">02</div>
+
+        <div class="timeline-card">
+          <span>THE JOURNEY</span>
+
+          <h3>
+            Growing together
+          </h3>
+
+          <p>
+            Through laughter, little adventures and countless
+            memories, two lives slowly became one shared journey.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="timeline-item reveal">
+
+        <div class="timeline-dot">03</div>
+
+        <div class="timeline-card">
+          <span>THE PROMISE</span>
+
+          <h3>
+            A forever begins
+          </h3>
+
+          <p>
+            With the love of our families and the blessings of
+            those closest to us, we decided to take the next
+            beautiful step together.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+
+    <div class="countdown-overlay"></div>
+
+    <div class="countdown-content reveal">
+
+      <p class="eyebrow">
+        COUNTING DOWN TO FOREVER
+      </p>
+
+      <h2>
+        The big day is almost here
+      </h2>
+
+      <p class="countdown-date">
+        25 November 2026
+      </p>
+
+      <div class="countdown">
+
+        <div>
+          <strong id="days">00</strong>
+          <span>Days</span>
+        </div>
+
+        <i>:</i>
+
+        <div>
+          <strong id="hours">00</strong>
+          <span>Hours</span>
+        </div>
+
+        <i>:</i>
+
+        <div>
+          <strong id="minutes">00</strong>
+          <span>Minutes</span>
+        </div>
+
+        <i>:</i>
+
+        <div>
+          <strong id="seconds">00</strong>
+          <span>Seconds</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EVENTS -->
+  <section id="events" class="section events-section">
+
+    <div class="section-heading reveal">
+
+      <p class="eyebrow">
+        THE CELEBRATIONS
+      </p>
+
+      <h2 class="section-title">
+        Join us for every moment
+      </h2>
 
     </div>
 
 
-    <!-- =========================================
-         MAIN WEBSITE
-    ========================================== -->
+    <div class="events-grid">
 
-    <main id="main-content" class="hidden">
+      <!-- WEDDING -->
+      <article class="event-card reveal">
 
+        <div class="event-image placeholder-event">
+          <span>WEDDING</span>
+          <small>PHOTO COMING SOON</small>
+        </div>
 
-        <!-- =====================================
-             HERO
-        ====================================== -->
+        <div class="event-info">
 
-        <section class="hero section">
+          <span class="event-number">01</span>
 
-            <div class="hero-inner">
+          <h3>
+            Wedding Ceremony
+          </h3>
 
-                <p class="eyebrow reveal">
-                    WITH THE BLESSINGS OF OUR FAMILIES
-                </p>
+          <p class="event-meta">
+            Wednesday • 25 November 2026
+          </p>
 
-                <h1 class="hero-title reveal">
-                    Pratyush
-                    <span>&</span>
-                    Minakshi
-                </h1>
+          <button class="details-btn" type="button">
+            View details <span>+</span>
+          </button>
 
-                <p class="hero-date reveal">
-                    25 NOVEMBER 2026
-                </p>
-
-                <p class="hero-location reveal">
-                    BANKURA, WEST BENGAL
-                </p>
-
-                <div class="hero-divider reveal">
-                    ❧ ✦ ❧
-                </div>
-
-                <a href="#invitation" class="scroll-down">
-                    ↓
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             INVITATION MESSAGE
-        ====================================== -->
-
-        <section id="invitation" class="section invitation-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    A NEW CHAPTER BEGINS
-                </p>
-
-                <h2 class="section-title reveal">
-                    Together with our families
-                </h2>
-
-                <h3 class="couple-heading reveal">
-                    Pratyush & Minakshi
-                </h3>
-
-                <p class="large-date reveal">
-                    25 NOVEMBER 2026
-                </p>
-
-                <p class="invitation-text reveal">
-                    With immense joy and the blessings of our families,
-                    we invite you to be a part of our special day as
-                    we begin this beautiful new chapter of our lives
-                    together.
-                </p>
-
-                <div class="ornamental-divider">
-                    ❧ &nbsp; ✦ &nbsp; ❧
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             SAVE THE DATE / CALENDAR
-        ====================================== -->
-
-        <section class="section calendar-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    THE WEDDING DAY
-                </p>
-
-                <h2 class="section-title reveal">
-                    Mark Your Calendar
-                </h2>
-
-                <p class="section-description reveal">
-                    We would be honoured to have you with us on this
-                    special day. Please save the date and join us as
-                    we begin this new chapter together.
-                </p>
-
-
-                <div class="date-card reveal">
-
-                    <div class="calendar-icon">
-                        ▣
-                    </div>
-
-                    <p class="date-day">
-                        WEDNESDAY
-                    </p>
-
-                    <p class="date-number">
-                        25 November 2026
-                    </p>
-
-                    <button id="calendarButton" class="outline-button">
-                        Add to Calendar ✦
-                    </button>
-
-                </div>
-
-
-                <!-- Calendar -->
-
-                <div class="calendar-wrapper reveal">
-
-                    <div class="calendar-header">
-
-                        <button id="previousMonth"
-                                class="calendar-arrow">
-                            ‹
-                        </button>
-
-                        <h3 id="calendarMonth">
-                            November 2026
-                        </h3>
-
-                        <button id="nextMonth"
-                                class="calendar-arrow">
-                            ›
-                        </button>
-
-                    </div>
-
-                    <div class="calendar-weekdays">
-                        <span>SUN</span>
-                        <span>MON</span>
-                        <span>TUE</span>
-                        <span>WED</span>
-                        <span>THU</span>
-                        <span>FRI</span>
-                        <span>SAT</span>
-                    </div>
-
-                    <div id="calendarDays" class="calendar-days"></div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             COUPLE
-        ====================================== -->
-
-        <section class="section couple-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    THE COUPLE
-                </p>
-
-                <h2 class="section-title reveal">
-                    Meet the two souls
-                </h2>
-
-
-                <div class="couple-grid">
-
-
-                    <!-- Groom -->
-
-                    <article class="person-card reveal">
-
-                        <div class="person-photo placeholder-photo">
-                            <div>
-                                <span>PHOTO</span>
-                                <small>Coming Soon</small>
-                            </div>
-                        </div>
-
-                        <p class="person-role">
-                            THE GROOM
-                        </p>
-
-                        <h3>
-                            Pratyush Ghosh
-                        </h3>
-
-                        <p class="person-family">
-                            S/o Smt Manasi Ghosh<br>
-                            and Sri Anadi Ghosh
-                        </p>
-
-                        <p class="person-address">
-                            Kshudiram Sarani,<br>
-                            Bankura
-                        </p>
-
-                    </article>
-
-
-                    <div class="couple-ampersand">
-                        &
-                    </div>
-
-
-                    <!-- Bride -->
-
-                    <article class="person-card reveal">
-
-                        <div class="person-photo placeholder-photo">
-                            <div>
-                                <span>PHOTO</span>
-                                <small>Coming Soon</small>
-                            </div>
-                        </div>
-
-                        <p class="person-role">
-                            THE BRIDE
-                        </p>
-
-                        <h3>
-                            Minakshi Banerjee
-                        </h3>
-
-                        <p class="person-family">
-                            D/o Smt Nandita Banerjee<br>
-                            and Sri Tapas Banerjee
-                        </p>
-
-                        <p class="person-address">
-                            Dasbagan,<br>
-                            Bankura
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             STORY
-        ====================================== -->
-
-        <section class="section story-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    OUR STORY
-                </p>
-
-                <h2 class="section-title reveal">
-                    From a moment to forever
-                </h2>
-
-
-                <div class="story-list">
-
-
-                    <article class="story-item reveal">
-
-                        <div class="story-number">
-                            01
-                        </div>
-
-                        <div>
-                            <p class="story-label">
-                                THE BEGINNING
-                            </p>
-
-                            <h3>
-                                When our paths crossed
-                            </h3>
-
-                            <p>
-                                Every beautiful story begins with an
-                                ordinary moment. Ours began with a
-                                meeting that neither of us knew would
-                                change everything.
-                            </p>
-                        </div>
-
-                    </article>
-
-
-                    <article class="story-item reveal">
-
-                        <div class="story-number">
-                            02
-                        </div>
-
-                        <div>
-                            <p class="story-label">
-                                THE JOURNEY
-                            </p>
-
-                            <h3>
-                                Growing together
-                            </h3>
-
-                            <p>
-                                Through laughter, little adventures
-                                and countless memories, two lives
-                                slowly became one shared journey.
-                            </p>
-                        </div>
-
-                    </article>
-
-
-                    <article class="story-item reveal">
-
-                        <div class="story-number">
-                            03
-                        </div>
-
-                        <div>
-                            <p class="story-label">
-                                THE PROMISE
-                            </p>
-
-                            <h3>
-                                A forever begins
-                            </h3>
-
-                            <p>
-                                With the love of our families and the
-                                blessings of those closest to us, we
-                                decided to take the next beautiful
-                                step together.
-                            </p>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             COUNTDOWN
-        ====================================== -->
-
-        <section class="section countdown-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    COUNTING DOWN TO FOREVER
-                </p>
-
-                <h2 class="section-title reveal">
-                    The big day is almost here
-                </h2>
-
-                <p class="countdown-date reveal">
-                    25 November 2026
-                </p>
-
-
-                <div class="countdown-grid reveal">
-
-                    <div class="count-box">
-                        <strong id="days">00</strong>
-                        <span>Days</span>
-                    </div>
-
-                    <div class="count-separator">:</div>
-
-                    <div class="count-box">
-                        <strong id="hours">00</strong>
-                        <span>Hours</span>
-                    </div>
-
-                    <div class="count-separator">:</div>
-
-                    <div class="count-box">
-                        <strong id="minutes">00</strong>
-                        <span>Minutes</span>
-                    </div>
-
-                    <div class="count-separator">:</div>
-
-                    <div class="count-box">
-                        <strong id="seconds">00</strong>
-                        <span>Seconds</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             CELEBRATIONS
-        ====================================== -->
-
-        <section class="section celebrations-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    THE CELEBRATIONS
-                </p>
-
-                <h2 class="section-title reveal">
-                    Join us for every moment
-                </h2>
-
-
-                <!-- Wedding -->
-
-                <article class="event-card reveal">
-
-                    <div class="event-image placeholder-event">
-                        <span>WEDDING CEREMONY</span>
-                    </div>
-
-                    <div class="event-content">
-
-                        <span class="event-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Wedding Ceremony
-                        </h3>
-
-                        <p class="event-date">
-                            Wednesday • 25 November 2026
-                        </p>
-
-                        <p>
-                            Join us as we exchange vows and begin
-                            our forever surrounded by love and
-                            blessings.
-                        </p>
-
-                        <h4>
-                            Bengal Taj Guest House
-                        </h4>
-
-                        <button class="details-button"
-                                onclick="scrollToVenue('weddingVenue')">
-                            View details +
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Reception -->
-
-                <article class="event-card reverse reveal">
-
-                    <div class="event-image placeholder-event">
-                        <span>RECEPTION PARTY</span>
-                    </div>
-
-                    <div class="event-content">
-
-                        <span class="event-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Reception Party
-                        </h3>
-
-                        <p class="event-date">
-                            Friday • 27 November 2026
-                        </p>
-
-                        <p>
-                            Come celebrate, dine and share our
-                            happiness as we begin our new chapter
-                            together.
-                        </p>
-
-                        <h4>
-                            Ananya Marriage Hall / Lodge
-                        </h4>
-
-                        <button class="details-button"
-                                onclick="scrollToVenue('receptionVenue')">
-                            View details +
-                        </button>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             VENUES
-        ====================================== -->
-
-        <section class="section venue-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    THE VENUES
-                </p>
-
-                <h2 class="section-title reveal">
-                    We look forward to celebrating with you
-                </h2>
-
-
-                <!-- Wedding Venue -->
-
-                <article id="weddingVenue"
-                         class="venue-card reveal">
-
-                    <div class="venue-icon">
-                        ✦
-                    </div>
-
-                    <p class="venue-label">
-                        WEDDING CEREMONY
-                    </p>
-
-                    <h3>
-                        Bengal Taj Guest House
-                    </h3>
-
-                    <p>
-                        63X4+78M, Panchbaga Bypass Road,<br>
-                        Subhankar Pally, opposite Bondyopadhyay
-                        Pharmacy,<br>
-                        Palli, Bankura, West Bengal 722101
-                    </p>
-
-                    <p class="venue-date">
-                        Wednesday • 25 November 2026
-                    </p>
-
-                    <a class="map-button"
-                       href="https://www.google.com/maps/search/?api=1&query=Bengal+Taj+Guest+House+Bankura+West+Bengal"
-                       target="_blank"
-                       rel="noopener">
-                        Get Directions ↗
-                    </a>
-
-                </article>
-
-
-                <!-- Reception Venue -->
-
-                <article id="receptionVenue"
-                         class="venue-card reveal">
-
-                    <div class="venue-icon">
-                        ✦
-                    </div>
-
-                    <p class="venue-label">
-                        RECEPTION
-                    </p>
-
-                    <h3>
-                        Ananya Marriage Hall / Lodge
-                    </h3>
-
-                    <p>
-                        274/2/A/1, Katjuridanga,<br>
-                        Bankura, West Bengal 722102
-                    </p>
-
-                    <p class="venue-date">
-                        Friday • 27 November 2026
-                    </p>
-
-                    <a class="map-button"
-                       href="https://www.google.com/maps/search/?api=1&query=Ananya+Marriage+Hall+Lodge+Katjuridanga+Bankura+West+Bengal"
-                       target="_blank"
-                       rel="noopener">
-                        Get Directions ↗
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             MEMORIES
-        ====================================== -->
-
-        <section class="section memories-section">
-
-            <div class="section-container">
-
-                <p class="eyebrow reveal">
-                    OUR MEMORIES
-                </p>
-
-                <h2 class="section-title reveal">
-                    A few moments we treasure
-                </h2>
-
-                <p class="section-description reveal">
-                    Our memories will be added here soon.
-                </p>
-
-
-                <div class="memory-grid">
-
-                    <div class="memory-placeholder reveal">
-                        <span>PHOTO 01</span>
-                    </div>
-
-                    <div class="memory-placeholder reveal">
-                        <span>PHOTO 02</span>
-                    </div>
-
-                    <div class="memory-placeholder reveal">
-                        <span>PHOTO 03</span>
-                    </div>
-
-                    <div class="memory-placeholder reveal">
-                        <span>PHOTO 04</span>
-                    </div>
-
-                    <div class="memory-placeholder reveal">
-                        <span>PHOTO 05</span>
-                    </div>
-
-                    <div class="memory-placeholder reveal">
-                        <span>PHOTO 06</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             FOOTER
-        ====================================== -->
-
-        <footer class="footer">
-
-            <div class="footer-ornament">
-                ❧ &nbsp; ✦ &nbsp; ❧
-            </div>
-
-            <h2>
-                Pratyush & Minakshi
-            </h2>
+          <div class="event-details">
 
             <p>
-                25 November 2026
+              Join us as we exchange vows and begin our
+              forever surrounded by love and blessings.
             </p>
 
-            <p class="footer-small">
-                With love and blessings from our families
+            <strong>
+              Bengal Taj Guest House
+            </strong>
+
+            <p>
+              63X4+78M, Panchbaga Bypass Road,
+              Subhankar Pally, opposite Bondyopadhyay Pharmacy,
+              Palli, Bankura, West Bengal 722101
             </p>
 
-            <div class="footer-year">
-                © 2026
-            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Bengal+Taj+Guest+House+Bankura+West+Bengal"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-link"
+            >
+              Get Directions ↗
+            </a>
 
-        </footer>
+          </div>
 
-    </main>
+        </div>
 
-
-    <!-- =====================================
-         BACK TO TOP
-    ====================================== -->
-
-    <button id="backToTop"
-            class="back-to-top">
-        ↑
-    </button>
+      </article>
 
 
-    <script src="script.js"></script>
+      <!-- RECEPTION -->
+      <article class="event-card reveal">
+
+        <div class="event-image placeholder-event">
+          <span>RECEPTION</span>
+          <small>PHOTO COMING SOON</small>
+        </div>
+
+        <div class="event-info">
+
+          <span class="event-number">02</span>
+
+          <h3>
+            Reception Party
+          </h3>
+
+          <p class="event-meta">
+            Friday • 27 November 2026
+          </p>
+
+          <button class="details-btn" type="button">
+            View details <span>+</span>
+          </button>
+
+          <div class="event-details">
+
+            <p>
+              Come celebrate, dine and share our happiness
+              as we begin our new chapter together.
+            </p>
+
+            <strong>
+              Ananya Marriage Hall / Lodge
+            </strong>
+
+            <p>
+              274/2/A/1, Katjuridanga,
+              Bankura, West Bengal 722102
+            </p>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Ananya+Marriage+Hall+Lodge+Katjuridanga+Bankura+West+Bengal"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-link"
+            >
+              Get Directions ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- VENUES -->
+  <section id="venue" class="venue-section">
+
+    <div class="venue-image placeholder-venue">
+      <span>VENUE PHOTO</span>
+      <small>Photo coming soon</small>
+    </div>
+
+    <div class="venue-content reveal">
+
+      <p class="eyebrow">
+        THE VENUES
+      </p>
+
+      <h2>
+        Bengal Taj Guest House
+      </h2>
+
+      <p>
+        <strong>
+          Wedding Ceremony • Wednesday, 25 November 2026
+        </strong>
+        <br><br>
+        63X4+78M, Panchbaga Bypass Road,
+        Subhankar Pally,<br>
+        opposite Bondyopadhyay Pharmacy, Palli,<br>
+        Bankura, West Bengal 722101
+      </p>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Bengal+Taj+Guest+House+Bankura+West+Bengal"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="gold-btn"
+      >
+        Wedding Directions ↗
+      </a>
+
+
+      <h2 class="second-venue">
+        Ananya Marriage Hall / Lodge
+      </h2>
+
+      <p>
+        <strong>
+          Reception • Friday, 27 November 2026
+        </strong>
+        <br><br>
+        274/2/A/1, Katjuridanga,<br>
+        Bankura, West Bengal 722102
+      </p>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Ananya+Marriage+Hall+Lodge+Katjuridanga+Bankura+West+Bengal"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="gold-btn"
+      >
+        Reception Directions ↗
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+
+    <div class="section-heading reveal">
+
+      <p class="eyebrow">
+        OUR MEMORIES
+      </p>
+
+      <h2 class="section-title">
+        A few moments we treasure
+      </h2>
+
+      <p class="lead small">
+        Photos will be added here soon.
+      </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+      <button class="gallery-item reveal placeholder-gallery" type="button">
+        <span>PHOTO 01</span>
+      </button>
+
+      <button class="gallery-item reveal placeholder-gallery" type="button">
+        <span>PHOTO 02</span>
+      </button>
+
+      <button class="gallery-item reveal placeholder-gallery" type="button">
+        <span>PHOTO 03</span>
+      </button>
+
+      <button class="gallery-item reveal placeholder-gallery" type="button">
+        <span>PHOTO 04</span>
+      </button>
+
+      <button class="gallery-item reveal placeholder-gallery" type="button">
+        <span>PHOTO 05</span>
+      </button>
+
+      <button class="gallery-item reveal placeholder-gallery" type="button">
+        <span>PHOTO 06</span>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-ornament">
+      ❧ &nbsp; ✦ &nbsp; ❧
+    </div>
+
+    <h2>
+      Pratyush &amp; Minakshi
+    </h2>
+
+    <p>
+      25 November 2026
+    </p>
+
+    <p>
+      With love and blessings from our families
+    </p>
+
+    <div class="footer-year">
+      © 2026
+    </div>
+
+  </footer>
+
+</main>
+
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="closeLightbox" type="button" aria-label="Close">
+    ×
+  </button>
+
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
